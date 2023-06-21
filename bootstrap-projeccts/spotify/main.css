@@ -1,0 +1,121 @@
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+}
+#main-nav  h1{
+    font-size: x-large;
+    padding: 10px;
+}
+#main-nav h4{
+    font-size: medium;
+    padding: 20px;
+}
+
+.card{
+    border: none !important;
+    border: 20px o !important;
+    width: 200px;
+    margin: 20px;
+    
+}
+#card-sec .card img{
+   background-color: #242424;
+    
+    padding: 20px;
+}
+ #card-sec .card-body{
+    height: 80px;
+    color: white;
+    background-color:  #242424;
+}
+#cards {
+    display: flex;
+}
+
+ #nav-cards .card {
+    height: 100px;
+    width: 300px;
+
+ }
+
+ #nav-cards {
+    display: flex;
+ }
+
+
+ #svg
+ {
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: -20%;
+    
+   
+ }
+ #svg svg{
+    padding: 10px;
+    height: 40px;
+    background-color: #1ed760;
+    border-radius: 50%;
+   
+    
+ }
+.card:hover>#svg{
+    transition-duration: 0.5s;
+    bottom: 20%;
+}
+.card{
+    display: block;
+    overflow: hidden;;
+}
+ 
+
+#about{
+    padding: 5%;
+    font-size: medium;
+    font-weight: lighter;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;;
+    color: white;
+}
+#about h3{
+    font-size: medium;
+}
+#about  ul {
+    padding: 0%;
+    list-style:none ;
+}
+#about  ul li{
+    padding-top: 10px;
+}
+#about section{
+    margin-left: 30px;
+}
+
+#first{
+    
+    display: flex;
+    justify-content: space-between;
+}
+#about div i{
+    font-size: large;
+    color: white;
+    padding: 15px;
+    background-color:#242424;
+    border-radius: 50%;
+    margin-left: 30px;
+
+}
+#about .about{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+hr{
+    background-color: white;
+    border: 1px solid  white;
+
+}

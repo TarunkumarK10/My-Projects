@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color:#272d39;
+    top: 0;
+}
+nav div {
+    display: flex;
+}
+nav div i{
+    color: white;
+    padding: 8px;
+    border: 1px solid #676d79;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 15px;
+
+}
+nav div{
+    margin: 8px;
+}
+nav div:first-child ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    border: 1px solid #676d79;
+    border-radius: 5px;
+
+}
+nav div:first-child ul li{
+    padding: 8px;
+ }
+ nav div:first-child ul li:hover{
+    background-color: #676d79;
+    cursor: pointer;
+  }
+  nav div:first-child i:hover{
+    background-color: #676d79;
+    cursor: pointer;
+  }
+ nav  div div h1{
+    text-align: center;
+    font-weight: lighter;
+    color:white ;
+  
+ }
+ nav div+div ul {
+    list-style: none;
+    display: flex;
+   
+ }
+ nav div+div ul li{
+    color: white;
+    border: 1px solid #676d79;
+    margin-left: 10px;
+   border-radius: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding: 10px;
+   cursor: pointer;
+ }
+ nav div+div ul li+li+li{
+    background-color:  #e77;
+    color: white;
+    width: 200px;
+    text-align: center;
+   
+ }
+ nav div+div ul li:first-child{
+    width: 200px;
+    text-align: end;
+
+ }
+ #header{
+  
+    background-image: url(./images/footer.svg),url(./images/overlay.png),  linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+}
+
+ #header aside ul{
+    display: flex;
+   
+    justify-content: center;
+    list-style: none;
+ }
+ #header aside ul li{
+    color: white;
+    font-size: 20px;
+    padding-right: 80px;
+    padding: 20px;
+ }
+
+#header aside ul li input{
+   display: none;
+ }
+ #header ul li:nth-child(3){
+    border: 1px solid white;
+    border-top: 0;
+    text-align: center;
+    padding-right:40px ;
+    padding-bottom: 30px;
+    padding-left:40px ;
+    margin-right: 80PX;
+    margin-left: 80PX;
+    border-radius: 10px;
+
+ }
+ #header div{
+    margin-left: 30%;
+    margin-top: 80px;
+ }
+ #header div h1{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+ }
+ #header div{
+    width: 50%;
+ }
+
+ #header aside ul li input[type=checkbox]:checked~div{
+display: none;
+ }
+ #header div p{
+   width: 80%;
+   padding-bottom: 60px;
+    color: white;
+    padding-top: 50px;
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center; 
+ }
+ 
+ #header button{
+   width: 300px;
+   height: 80px;
+   border-radius: 10px;
+   border: none;
+   font-size: x-large;
+   color: #FF7088;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+ }
+
+ #sec2 {display: flex;
+justify-content: space-around;
+padding: 3rem;
+}
+  #sec2 div{
+   width: 40%;
+   display:block;
+   justify-content: center;
+   margin-top: 5rem;
+  }
+
+  #sec2 div h1{
+   padding: 40px;
+   font-size:30px;
+   text-align: center;
+   margin-left: 50px;
+    width: 80%;
+    font-weight: lighter;
+  }
+  #sec2 p{
+   text-align: center;
+   font-weight: lighter;
+   margin-left: 20px;
+   padding: 10px;
+  }
+#sec2 button{
+   width: 300px;
+   height: 60px;
+   border-radius: 10px;
+   border: none;
+   font-size: large;
+   color: black;
+   border: 1px solid;
+   background-color: white;
+  margin-left: 8rem;
+  margin-bottom: 5rem;
+  margin-top: 30px;
+  cursor: pointer;
+}
+ #aside{
+   height: 350px;
+  display: flex;justify-content: center;
+   background-image: url(./images/promo.jpg);
+   background-size:100%;
+   background-repeat: no-repeat;
+ }
+ #aside div{
+   display: flex;
+  margin-top: 8rem;
+  border: 1px solid white;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 8rem;
+  
+ }
+ #aside button, #sec3 button{
+   width: 300px;
+   height: 60px;
+   border-radius: 10px;
+   border: none;
+   font-size: large;
+   color: black;
+   border: 1px solid;
+   background-color: white;
+  margin-left:5rem;
+  cursor: pointer;
+ }
+ #aside h1{
+   font-weight: lighter;
+   font-size: 30px;
+ }
+ #sec3 aside {
+   padding: 90px;
+   padding-bottom: 50px;
+   display: flex;
+   justify-content: space-around;
+   background-image: url(https://html5up.net/uploads/demos/telephasic/assets/css/images/image-wrapper.svg);
+   background-repeat: repeat-x;
+ }
+
+ #sec3{
+   text-align: center;
+ }
+ #sec3 h1{
+   
+   font-weight: lighter;
+   font-size: 30px;
+   margin-top: 80px;
+ }
+ #sec3 p{
+   font-weight: lighter;
+   font-size: 30px;
+   margin-top: 20px;
+   color: #e77;
+ }
+ #sec3 aside p{
+   padding: 40px;
+   text-align: center;
+   font-weight: lighter;
+   font-size: 18px;
+   margin-top: 30px;
+   color:black;
+   padding-bottom:0;
+
+ }
+ #sec3 button{
+   width: 300px;
+   height: 60px;
+   border-radius: 10px;
+   border: none;
+   font-size: large;
+   color: black;
+   border: 1px solid;
+   background-color: white;
+  margin-left:5rem;
+  cursor: pointer;
+  margin-bottom: 50px;
+ }
+
+
+              
+              
+footer {
+  border: 1px solid;
+   background-color: #c2c7cc;
+  background-image: url(./images/footer.svg);
+  text-align: center;
+}
+footer aside {
+  display: flex;
+  justify-content: center;
+}
+footer aside div {
+  width: 50%;
+}
+ footer h1{
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: lighter;
+ }
+ footer p{
+  color: #e77;
+  margin-left: 15rem;
+  text-align: center;
+  width: 70%;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: lighter;
+  
+ }
+
+footer ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+footer ul li{
+  padding: 80px;
+}
+ footer aside{
+  padding: 50px;
+ }
+footer table{
+  padding: 50px;
+}
+input[type=text],input[type=email]{
+  padding: 20px;
+  width: 310px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: larger;
+}
+textarea{margin-left: 15px;
+  margin-top: 20px;
+  width: 40rem;
+  border-radius: 5px;
+  border: none;
+  font-size: larger;
+
+}
+
+footer div+div i{
+  font-size: xx-large
+
+
+}
+footer button{
+  width: 200px;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
+  color: black;
+  margin-left: 20px;
+  border: 1px solid;
+  background-color: white;
+
+ cursor: pointer;
+ margin-bottom: 50px;
+  
+}
+
+footer div+div table td{
+  border-bottom: 1px solid black;
+}
+footer div+div table tr td{
+  padding: 50px;
+  padding-left: 100px;
+}

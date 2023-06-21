@@ -1,0 +1,116 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+main{
+    background-color:#454647;
+    color: white;
+}
+nav{
+    background-color:#454647;
+    border-bottom: 3px solid black;
+    box-shadow: 0px 1px 3px;
+    position: sticky; 
+    top: 0;
+    z-index:17;
+}
+nav>img{
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#icon
+    {
+  font-size: xx-large;
+}
+#icon:hover{
+   color: green;
+}
+i{
+    font-size: x-large;
+    margin-left: 30px;
+}
+#checkbox{
+    display: none;
+}
+input{
+    height: 40px;
+    width: 500px;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+    font-size: larger; 
+    color: black;
+    font-weight: bolder;
+
+}
+ nav div{
+   position: absolute;
+   left:-14%; 
+   
+   width: 200px;
+   transition-duration: 1s;
+   background-color: #343535;
+  
+}
+  nav div ul li{
+     padding: 25px;
+     text-align: center;
+     font-size: larger;
+     border-bottom: 2px solid white;
+     box-shadow: 2px 2px 3px;
+   }
+   nav div ul li:hover{
+    background-color: #454647;
+    font-size: x-large;
+   }
+   div ul li a{
+    text-decoration: none;
+    color: white;
+   }
+
+input[type=checkbox]:checked~div{
+    left:0%;   
+    transition-duration: 1s;
+    z-index: 5;
+}
+
+section{
+    border: 2px ;
+}
+nav+div ul {
+   border: 2px solid black;
+display: flex;
+justify-content: space-evenly;
+}
+
+ nav+div ul li{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: large;
+    list-style: none;
+ }
+ nav+div ul li:hover{
+    color: green;
+    font-size: larger;
+ }
+
+section #vid{
+    width: 90%;
+    margin-left: 10%;
+    height: 1000px;
+}
+video{
+    height:400px;
+    width: 400px;
+    margin-left: 25px; 
+}
+
+video:hover{
+    height:410px;
+    width: 410px;
+    transition-duration: 1s;
+
+} 

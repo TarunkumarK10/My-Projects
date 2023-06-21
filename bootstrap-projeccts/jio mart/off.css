@@ -1,0 +1,53 @@
+.offcanvas-header{
+    justify-content: flex-start;
+    color: white;
+    font-size: large;
+    background-color: #0078ad;
+}
+.offcanvas-header i{
+    font-size: larger;color: white;
+   
+    border-radius: 40%;
+   background-image: none !important;
+}
+.bs-btn-close {
+    background-color: transparent
+}
+
+.sidemenu {
+    list-style: none !important;
+}.sidemenu  li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    padding: 10px;
+    border-bottom:1px solid ;
+    color: #0078ad;
+
+}.sidemenu img{
+    margin-right: 10px;
+}
+.offcanvas-body ul{
+    width: 90%;
+    margin-top: 30px;
+
+
+}
+.offcanvas-body P{
+    width: 60%;
+    margin-top: 20px;
+    font-size: small;
+}
+.offcanvas-body div{
+    margin-top: 60px;
+}
+.offcanvas-body  h5{
+    font-size: medium;
+}
+.sidemenu  li:hover{
+    text-decoration: underline;
+    font-size: large;
+    cursor: pointer;
+
+}
+              

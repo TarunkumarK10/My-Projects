@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+ 
+    background: rgba(55, 61, 73, 0.975);
+    color: white;
+    height: 60px;
+}
+nav aside h1{
+    width: 200px;
+    display: flex;
+   margin-left: 15px;
+    margin-top: 20px;
+  font-size: x-large;
+ 
+
+    
+}
+#nav-fi
+{ 
+    display: flex;
+    width: 50%;
+   
+    font-family: Arial, Helvetica, sans-serif;
+
+   
+}
+nav aside div~div{
+    width: 50%;
+}
+nav :first-child ul{
+    display: flex;
+   justify-content: flex-start;
+    border: 1px thin;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#nav-fi li{
+    font-size: larger;
+    margin-top: 30px;
+    margin-left: 10px;
+   text-align: center;
+    margin-top: 10px;
+    list-style: none;
+  
+}
+nav i{
+    margin-left: 20px;
+}
+#nav-las ul{
+   display: flex;
+   margin-left: 100%;
+   margin-top: 10px;
+}
+#nav-las ul li{
+    list-style: none;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+#sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+#sec  div{
+  
+    width: 70%;
+    height: 200px;
+    text-align: center;
+    
+}
+#sec div h1{
+    font-size: 60px;
+    color: #ed786a;;
+   text-shadow: 4px 5px 9px black;
+}
+#sec div p{
+    padding: 30px;
+    font-size: small;
+    padding-bottom: 10%;
+}
+#sec2 section{
+    margin-top: 30px;
+   display: flex;
+   justify-content: space-evenly;
+}
+#sec2 section div{
+     width: 20%;
+}
+#dow{
+    background-color:  #ed786a;
+}
+
+
+#sec2 h1,h2,p{
+    margin-top: 20px;
+    text-align: center;
+ 
+}
+ #sec2 button{
+    margin-top: 40px;
+  margin-left: 45%;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: larger;
+  background-color: #ed786a;
+ margin-bottom: 30px;
+}
+#sec3{
+    background-image: url(./imges/banner.jpg);
+    color: white;
+}
+#sec3 div h1{
+    text-align: center;
+  padding-top: 200px;
+
+}
+#sec3 div h2{
+    padding-bottom: 200px;
+}
+#sec4{
+    display: flex;
+    justify-content: space-around;
+}
+#sec4 aside{
+    width: 60%;
+    padding: 30px;
+    margin-top: 40px;
+}
+#sec4 aside+aside{
+    width: 30%;
+  
+}
+#first div{
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
+
+#sec4 aside img{
+    width: 100%;
+    height: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: larger;
+    background-color: #ed786a;
+}
+
+#sec4 aside p{
+    padding-bottom: 20px;
+    text-align:left;
+    line-height: 30px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight:lighter;
+}
+
+hr{
+  margin-top: 10px;
+ 
+}
+.bef::before{
+    content: url(./imges/pic06.jpg);
+
+}
+.befo::before{
+    content:  url(./imges/pic07.jpg);
+}
+footer div {
+    display: flex;
+    background-color: #e5e5e5;;
+}
+footer div div{
+    width: 50%;
+}
+footer div div+div P{
+text-align: left;
+width: 90%;
+font-size: -large;
+font-weight: lighter;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin-left: 20%;
+ margin-top: 10%;
+}
+
+footer div div table{
+    display: block;
+
+}
+table{
+   padding: 100px;
+}
+
+table input,text{
+    padding: 10px;
+    height: 40px;
+    width: 300px;
+}
+tr td{
+
+    padding: 10px;
+}
+footer h1{
+    background-color:#e5e5e5 ;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding: 80px;
+}
+

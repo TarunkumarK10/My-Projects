@@ -1,0 +1,52 @@
+.main{
+    background-color: gray;
+    
+}
+nav{
+    border: 5px solid white;
+}
+
+ul li{
+    float: left;
+    list-style: none;
+}
+li,i{
+    color: blue;
+    margin-left: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main2{
+    display: flex;
+    height: 700px;
+}
+div img~img{
+    margin-top: 85px;
+}
+.third {
+    margin-left:30px;
+    background-color: white;
+    height: 600px;
+    padding: 10px;
+    margin-top: 2px;
+}
+.four{
+ margin-top: 20px;
+    margin-left:5%;
+    margin-right: 10%;
+}
+#im{
+    height: 300px;
+    width: 600px;
+}
+button{
+    background-color: blue;
+    height: 30px;
+    border-radius: 10px;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}

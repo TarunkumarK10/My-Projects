@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 3;
+}
+nav div {
+    display: flex;
+}
+nav div i{
+    padding: 10px;
+    border: 1px solid #676d79;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 15px;
+
+}
+nav div{
+    margin: 10px;
+}
+nav div:first-child ul{
+    list-style: none;
+    display: flex;
+    border: 1px solid #676d79;
+    border-radius: 5px;
+
+}
+nav div:first-child ul li{
+    padding: 10px;
+ }
+ nav div:first-child ul li:hover{
+    background-color: #676d79;
+    cursor: pointer;
+  }
+  nav div:first-child i:hover{
+    background-color: #676d79;
+    cursor: pointer;
+  }
+ nav  div div h1{
+    text-align: center;
+    color:#676d79 ;
+  
+ }
+ nav div+div ul {
+    list-style: none;
+    display: flex;
+   
+ }
+ nav div+div ul li{
+    border: 1px solid #676d79;
+    margin-left: 10px;
+   border-radius: 5px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding: 10px;
+   cursor: pointer;
+ }
+ nav div+div ul li+li+li{
+    background-color:  #e77;
+    color: white;
+    width: 200px;
+    text-align: center;
+   
+ }
+ .nav2 {
+    display: flex;
+    justify-content: center;
+    background-color: #282828;
+    position: sticky;
+    top: 60px;
+    
+ }
+ .nav2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+ }
+
+ .nav2 ul li{
+    color: white; font-size: larger;
+    padding: 25px;
+     cursor: pointer;
+ }
+
+ #sec{
+    display: flex;
+    justify-content: center; 
+ }
+ #sec div:first-child img{
+    border-radius: 50%;
+    margin-left: 50px;
+ }
+ #sec div{
+    padding-top: 10%;
+
+ }
+ #sec div+div{
+     margin-left :30px;
+     width: 60%;
+ }
+ #sec div h1{
+    font-size: 60px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ #sec div+div p{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight:lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ #sec div+div button{
+    width: 300px;
+    height: 4.5rem;
+    border-radius: 10px;
+    font-size: larger;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px ;
+    background-color: #43B3E0;
+    margin-bottom: 30%;
+ }
+
+ #aside {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+
+ }
+ #sec2{
+    background-image: url(./images/bg.png);
+    border-top: 1px  solid #e77;
+ }
+
+
+ #sec2 aside div{
+   width: 28%;
+   border: 1px solid #EA8A95;
+   box-shadow: 10px  #EA8A95;
+   padding: 50px;
+   background-color: white;
+margin: 20px;
+ }
+ #sec2 i{
+   font-size: 100px;
+   color: #EA8A95;
+ }
+  #sec2 aside h1,#sec3 aside h1{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #sec2 aside p,#sec3 aside p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+   #sec2 aside:first-child h1,#sec3 aside:first-child h1{
+    margin-top: 10rem;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   #sec2 aside:first-child p,#se3 aside:first-child p{
+    margin-bottom: 30px;
+
+   }
+#sec2 aside button{
+    margin-top: 3rem;
+    width: 400px;
+    height: 4.5rem;
+    border-radius: 10px;
+    font-size: larger;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px ;
+    background-color: #43B3E0;
+    margin-bottom: 10rem;
+    margin-left: 35%;
+}
+#sec2 aside+aside+aside p, #sec3 aside+aside+aside p{
+    margin-top: 2rem;  
+
+}
+#sec3{
+    background-image: url(./images/bg\ 2.png);
+    border-top: 1px  solid #e77;
+   
+ }
+
+
+  #sec3 aside+aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #sec3 aside+aside img {
+    
+    width: 350px;
+    height: 300px;
+  }
+  #sec3 aside+aside div{
+    border: 1px solid #e77;
+    margin: 10px;
+    background-color: white;
+
+  }
+  #sec3 aside+aside+aside{
+   
+    display: block;
+  }
+  #sec3 aside+aside+aside button{
+    margin-top: 3rem;
+    width: 400px;
+    height: 4.5rem;
+    border-radius: 10px;
+    font-size: larger;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px ;
+    background-color: #43B3E0;
+    margin-bottom: 10rem;
+    margin-left: 35%;
+
+  }
+
+  #sec3 aside+aside p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+
+  }
+  #sec3 aside+aside h1{
+    padding: 20px;
+    font-size: 30px;
+
+  }
+
+   footer{
+    
+      padding-top: 5rem;
+      background-color: #303030;;
+      text-align: center;
+      color: white;
+      
+    
+   }
+    footer  table{
+      margin-top: 30px;
+      position: relative;
+      
+      left: 18rem;
+    }
+    footer table tr:first-child td input{
+     padding: 20px;
+     border-radius: 10px;
+     margin-top: 10px;
+     width: 400px;
+     margin-bottom: 20px;
+     font-size: x-large;
+     background-color: #181818;;
+    }
+    footer table tr+tr input{
+      border-radius: 10px;
+      font-size: x-large;
+      margin: 10px;
+      background-color: #181818;
+      width:800px;padding: 20px;
+    }
+    footer textarea{
+      background-color: #181818;
+      border-radius: 10px;
+      width: 800px;margin-top: 30px;
+    }
+    footer button{
+      width: 200px;
+      margin-top: 20px;
+      height: 60px;
+      border-radius: 5px;
+      border: none;
+      font-size: large;
+      color: black;
+      margin-left: 20px;
+      border: 1px solid;
+      background-color: white;
+    
+     cursor: pointer;
+     margin-bottom: 50px;
+    }
+
+     footer h1:first-child{
+      font-size: 40px;
+      font-weight: lighter;
+     }
+     footer p{
+      font-size: x-large;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: lighter;
+     }
+     footer i{
+      font-size: xx-large;
+      padding: 10px;
+ margin: 30px;
+      color: white;
+      background-color: #444;;
+     }
+     section+section  div span
+     {
+      color: white
+      ;
+      padding: 40px;
+      
+     }
+     footer section+section div{
+     height: 200px;
+     margin-top: 50px;
+     
+    
+     }
+     

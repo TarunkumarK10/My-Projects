@@ -1,0 +1,305 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+main nav{
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 5;
+}
+#img-cont{
+    width: 10%;
+ 
+}
+#aus{
+   height: 60px;
+}
+
+#cont{
+    width: 50%;
+}
+#icon{
+    width: 20%;
+    
+}
+ nav ul {
+    color: #555;;
+    list-style: none;
+    display: flex;
+    margin-left: 35px;
+
+ }
+nav ul li{
+    padding-left: 40px;
+    
+    font-size: 20px;
+    padding-top: 25px;
+    
+ }
+ nav div img{
+    padding-left: 45px;
+    padding-top: 20px;
+  
+ }
+  nav i{
+  color: black;
+    font-size: x-large;
+    padding-left:35px;
+ }
+
+ #back{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+ }
+  #font{
+    width:400px;
+    padding-top: 70px;
+    margin-left: 150px;
+  }
+ 
+  #front{
+    position: absolute;
+    top:40px;
+  }
+ 
+ #but1{
+    width: 150px;
+    height: 50px;
+    background-color:  #fbc834;
+    border-color:  #fbc834;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: bold;
+ }
+ #but2{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 20px;
+
+ }
+ section div div{
+    margin-left: 150px;
+ }
+
+  #images{
+    bottom:60px;
+    display:block; 
+    background-color: wheat;
+    position: relative;
+  }
+  #content{
+    position: relative; 
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    bottom: 40px;
+  }
+  #content div{
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 2px;
+  }
+  #content div img{
+    width: 410px;
+    padding: 10px;
+  }
+
+  #content div+div{
+    position: relative;
+  }
+  #content div+div img{
+    width: 100%;
+    
+    
+  }
+  #content div+div div,#last div div{
+    position: absolute;
+    top:30%;
+    color: white;
+    font-size: x-large;
+  }
+  #content div+div div p,#last div div p{
+    font-size:large;
+    font-weight: bold;
+    padding: 25px;
+    padding-right: 30%;
+  }
+  
+  #content div+div div button,#last div div button{
+    height: 50px;
+    width: 150px;
+   margin-left: 20%;
+   background-color: #fbc834;
+   border-radius: 10px;
+   border-color: #fbc834;
+   font-size: large;
+   font-weight: bold;
+  cursor: pointer;
+  }
+
+  section aside{
+    margin-left: 30px;
+    font-size: x-large;
+    margin-top: 90px;
+  }
+  aside h1{
+    margin-left: 20px;
+  }
+  aside ul{
+    padding-top: 30px;
+    display: flex;
+  }
+  #ass1 ul li{
+    text-align: center;
+   font-size: medium;
+   list-style: none;
+   border: 2px solid;
+   border-radius: 30px;
+   padding: 5px;
+   width: 80px;
+   margin-left: 20px;
+  }
+    #sec img,#third img{
+    height: 600px;
+    width: 400px;
+    padding: 40px;
+
+  }
+  #ass2 ul li{
+   text-align: center;
+    font-size:medium;
+    list-style: none;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+
+  }
+  
+
+  #last div{
+    position: relative;
+  }
+
+  #last div img{
+    width: 100%;
+  }
+  #last div div{
+    position: absolute;
+    position: absolute;
+    top:30%;
+    color: white;
+    font-size: x-large;
+   
+  }
+  
+  #last-img{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aus {
+    margin-left: 5%;
+    font-size: xx-large;
+  }
+  #last-img img{
+    
+    height: 250px;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 250px;
+    margin: 20px;
+  }
+  #load{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 45%;
+    background-color:#00535e;font-size:large;
+    font-weight: bolder;margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+  #footer{
+    position: relative;
+    bottom: 120px;
+    background-color: #004165;
+    height: 100%
+  }
+  #footer>div{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    border-bottom:2px solid cyan;
+  }
+  #footer div img{
+    width: 200px;
+    display: flex;
+
+  }
+ 
+  #footer div+div img{
+    width: 50px;
+    margin-right: 20px;
+  }
+  #footer div+div p{
+    color: white;
+  }
+  #footer div+div+div+div p{
+    font-size: small;
+  }
+  #icon{
+    font-size: small;
+    color: white;
+    width: 300px;
+    height: 300px;
+  }
+  #aside aside{
+    width:45%;
+   
+  }
+
+  #aside ul {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+  }
+  #aside ul li{
+    border: none;
+    margin: 20px;
+    list-style: none;
+  }
+  #aside aside h3{
+    color: white;
+    margin: 20px;
+  }
+  #aside aside select{
+    width: 200px;
+    margin: 20px;
+    height: 50px; font-size: medium;
+    background-color: #004165;
+    color: white;
+  }
+#about{
+   color: white;
+  display: flex;
+  line-height: 30px;
+
+}
+ 

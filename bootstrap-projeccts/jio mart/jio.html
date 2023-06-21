@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jio mart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./jio-nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <main>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <div>
+          <!-- toggle start  offcanvas-->
+          <button class="btn btn-primary" id="side-bar-toggle" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+              class="fa-solid fa-bars"></i></button>
+
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-sharp fa-solid fa-angle-left"></i></button>
+              <h5 >Hello</h5>
+            </div>
+            <div   class="offcanvas-body">
+              <ul  class="sidemenu">
+                <li><img src="./imges/home-icon.svg" alt="">Home</li>
+                <li><img src="./imges/category-icon.svg" alt="">Shope BY Category</li>
+              </ul>
+              <ul class="sidemenu">
+                <h5>My Acoouunt</h5>
+                <li><img src="./imges/my-order-icon.svg" alt="">My Order</li>
+                <li><img src="./imges/my-list-newicon.svg" alt="">My List</li>
+                <li><img src="./imges/my-list-newicon.svg" alt="">Whishlist</li>
+                <li><img src="./imges/wallet-icon.svg" alt="">Jio Wallet</li>
+              </ul>
+              <ul  class="sidemenu">
+                <h5>Offers & More</h5>
+                <li><img src="./imges/offer-store-icon.svg" alt="">Offer Store</li>
+                <li><img src="./imges/my-list-newicon.svg" alt="">Coupon Store</li>
+                <li><img src="./imges/gift-store-icon.svg" alt="">Gift Store</li>
+                <li><img src="./imges/gift-card-icon.svg" alt="">Jio mart Gift Card</li>
+              </ul>
+              <ul  class="sidemenu">
+                <h5>Help & Support </h5>
+                <li><img src="./imges/faqs-icon.svg" alt="">FAQs /Need Help</li>
+                <li><img src="./imges/about-us-icon.svg" alt="">About Us</li>
+                <li><img src="./imges/contact-us-icon.svg" alt=""> Contact Us</li>
+                <li><img src="./imges/guide-icon.svg" alt=""> Guide</li>
+                <li><img src="./imges/caution-notice.svg" alt="">Caution</li>
+              </ul>
+
+              <div>
+                <h3>Download the App</h5>
+                <span><img src="./imges/google-play-icon.svg" alt=""></span>
+                <span><img src="./imges/ios_app_icon.svg" alt=""></span>
+              </div>
+              <div>
+                
+              <img src="./imges/jiomart-logo-hamburger.svg" alt="">
+              <p>Please note that you are accessing the BETA Version of jiomart.com</p>
+              <p>Should you encounter any bugs, glitches, lack of functionality, delayed deliveries, billing errors or other problems on the beta website, please email us on cs@jiomart.com</p>
+              
+              </div>
+            
+            </div>
+            
+          </div>
+          <!-- toggle ends -->
+          <!-- logo -->
+          <a class="jm-btn primary small jm-heading-base jm-fc-white jm-border-none" href="https://www.jiomart.com/">
+            <img src="https://www.jiomart.com/assets/ds2web/images/jiomart_beta_logo.svg" alt="JioMart"> </a>
+          <!-- logosnds  -->
+
+          <!-- location -->
+          <button class="jm-btn primary small jm-border-none"> <img class="jm-mr-xxs"
+              src="https://www.jiomart.com/assets/ds2web/jds-icons/location-icon.svg" alt=""> <span
+              class="jm-body-xs deliver-to">Deliver to</span> &nbsp; <span class="jm-body-xs-bold"
+              id="btn_deli_username"></span> <span class="jm-body-xs-bold" id="delivery_city_pincode">Mumbai
+              400020</span> </button>
+          <!-- ends  -->
+        </div>
+
+        <div class="nav-side">
+          <form class="d-flex" role="search">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span><input class="form-control me-2" type="search" placeholder="Search Jio Mart"
+                  aria-label="Search"></span>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+          </form>
+          <div>
+            <button class="jm-btn primary medium jm-icon jm-border-none" id="btn_minicart"> <img class="icon"
+                src="https://www.jiomart.com/assets/ds2web/jds-icons/cart-icon.svg"> </button>
+            <button class="signup">
+              <span>
+                <img src="https://www.jiomart.com/assets/ds2web/jds-icons/user-icon.svg" alt="">
+                <span>Sign in</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar 2 start  -->
+    <nav class="nav2">
+      <ul class="nav-list">
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Groceries
+            </a>
+
+            <ul class="dropdown-menu">
+         
+              <li><a class="dropdown-item" href="#">Dairy & Bakery</a></li>
+              <li><a class="dropdown-item" href="#">Staples</a></li>
+              <li><a class="dropdown-item" href="#">Snacks & Branded Foods</a></li>
+              <li><a class="dropdown-item" href="#">Beverages</a></li>
+              <li><a class="dropdown-item" href="#">Home Care</a></li>
+              <li><a class="dropdown-item" href="#">Mom & Baby Care  </a></li>
+              <li><a class="dropdown-item" href="#">Books</a></li>
+              <li><a class="dropdown-item" href="#">Pets</a></li>
+              <li><a class="dropdown-item" href="#">Beauty</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Premium Fruits
+            </a>
+                  
+            
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Apples & Pears</a></li>
+              <li><a class="dropdown-item" href="#">Avocado, Peach, Plum/a></li>
+              <li><a class="dropdown-item" href="#">Banana, Melons & Coconut</a></li>
+              <li><a class="dropdown-item" href="#">Cherries, Berries & Exotic Fruits</a></li>
+              <li><a class="dropdown-item" href="#">Citrus, Mango & Grapes</a></li>
+              <li><a class="dropdown-item" href="#">Dates</a></li>
+              <li><a class="dropdown-item" href="#">Gift, Assorted & XL Packs</a></li>
+              <li><a class="dropdown-item" href="#">Pomegranate, Papaya & Pineapple</a></li>
+              <li><a class="dropdown-item" href="#">Seasonal & Minor Fruits</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home & kitchen
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"> Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Disposables</a></li>
+              <li><a class="dropdown-item" href="#">  Furnishing</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Garden & Outdoor</a></li>
+              <li><a class="dropdown-item" href="#"> Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">  Kitchenware</a></li>
+              <li><a class="dropdown-item" href="#"> Prayer & Spiritual Needs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Fashion
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"> Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Disposables</a></li>
+              <li><a class="dropdown-item" href="#">  Furnishing</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Garden & Outdoor</a></li>
+              <li><a class="dropdown-item" href="#"> Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">  Kitchenware</a></li>
+              <li><a class="dropdown-item" href="#"> Prayer & Spiritual Needs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Electronics
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"> Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Disposables</a></li>
+              <li><a class="dropdown-item" href="#">  Furnishing</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Garden & Outdoor</a></li>
+              <li><a class="dropdown-item" href="#"> Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">  Kitchenware</a></li>
+              <li><a class="dropdown-item" href="#"> Prayer & Spiritual Needs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Beauty
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"> Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Disposables</a></li>
+              <li><a class="dropdown-item" href="#">  Furnishing</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Garden & Outdoor</a></li>
+              <li><a class="dropdown-item" href="#"> Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">  Kitchenware</a></li>
+              <li><a class="dropdown-item" href="#"> Prayer & Spiritual Needs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Home Importvement
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"> Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Disposables</a></li>
+              <li><a class="dropdown-item" href="#">  Furnishing</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Garden & Outdoor</a></li>
+              <li><a class="dropdown-item" href="#"> Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">  Kitchenware</a></li>
+              <li><a class="dropdown-item" href="#"> Prayer & Spiritual Needs</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Sports, Toys & Luggages
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"> Bathroom & Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="#">Disposables</a></li>
+              <li><a class="dropdown-item" href="#">  Furnishing</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+              <li><a class="dropdown-item" href="#">Garden & Outdoor</a></li>
+              <li><a class="dropdown-item" href="#"> Home Decor</a></li>
+              <li><a class="dropdown-item" href="#">  Kitchenware</a></li>
+              <li><a class="dropdown-item" href="#"> Prayer & Spiritual Needs</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+    <!-- nav bar 2 ends  -->
+
+
+    <!-- main body start  -->
+
+    <section id="main-body">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683875873_Mega_Offers_On_Top_Fashion_Styles.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683916363_Kitchen_summer.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684000663_Time_to_Save_More.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683876177_Deals_you_cannot_miss.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684000663_Time_to_Save_More.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section>
+        <img class="baner"
+          src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683829790_Flash_Deals_1680X320.jpg" alt="">
+      </section>
+      <section class="sec3">
+        <div>
+          <div>
+            <img class="baner" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683833551_1240x209.jpg"
+              alt="">
+          </div>
+          <div>
+            <img class="baner" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683833613_1240x209.jpg"
+              alt="">
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- section 4 start  -->
+      <section class="sec4">
+        <h1>Electronics</h1>
+
+
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- card start  -->
+              <section class="cards-flex">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005020_OnePlus_11R.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683793428_Grab_or_Gone_deals_on_TV.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005164_Vivo_T2X_5G.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005231_Zunvolt_Thunder_Ceiling_Fan.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+              </section>
+
+              <!-- card end  -->
+            </div>
+            <div class="carousel-item">
+              <!-- card start  -->
+              <section class="cards-flex">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005020_OnePlus_11R.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683793428_Grab_or_Gone_deals_on_TV.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005164_Vivo_T2X_5G.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005231_Zunvolt_Thunder_Ceiling_Fan.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+              </section>
+
+              <!-- card end  -->
+            </div>
+            <div class="carousel-item">
+              <!-- card start  -->
+              <section class="cards-flex">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005020_OnePlus_11R.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683793428_Grab_or_Gone_deals_on_TV.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005164_Vivo_T2X_5G.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005231_Zunvolt_Thunder_Ceiling_Fan.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+              </section>
+
+              <!-- card end  -->
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+      </section>
+      <!-- end  -->
+
+
+      <!-- section5 start  -->
+
+      <section class="sec5">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683823036_1240x209.jpg" alt="">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683651575_1240x209.jpg" alt="">
+      </section>
+      <!-- ends  -->
+
+
+
+  
+  <!-- section 6 start -->
+  <main>
+    <section class="sec6">
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- card start  -->
+            <div class="card" style="width: 90rem;">
+              <section class="cards-flex">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683701893_1.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702297_2.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702393_3.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702462_4.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702535_5.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702654_6.jpg" class="card-img-top"
+                  alt="...">
+
+              </section>
+            </div>
+            <!-- ends   -->
+          </div>
+          <div class="carousel-item">
+            <!-- card start  -->
+            <div class="card" style="width: 90rem;">
+              <section class="cards-flex">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683701893_1.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702297_2.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702393_3.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702462_4.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702535_5.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702654_6.jpg" class="card-img-top"
+                  alt="...">
+
+              </section>
+            </div>
+            <!-- ends   -->
+
+          </div>
+          <div class="carousel-item">
+            <!-- card start  -->
+            <div class="card" style="width: 90rem;">
+              <section class="cards-flex">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683701893_1.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702297_2.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702393_3.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702462_4.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702535_5.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683702654_6.jpg" class="card-img-top"
+                  alt="...">
+
+              </section>
+            </div>
+            <!-- ends   -->
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- section 6 ends -->
+
+  <
+    <section class="sec7">
+
+
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner" style="padding: 50px;">
+          <div class="carousel-item active">
+            <!-- start  -->
+            <div class="card" style="width: 18rem;">
+              <section style="display: flex;">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795254_Smartphones.jpg"
+                  class="card-img-top" alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795325_Ac.jpg" class="card-img-top"
+                  alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795365_Televisions.jpg"
+                  class="card-img-top" alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795408_Laptop.jpg"
+                  class="card-img-top" alt="...">
+                <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795524_Headphones.jpg"
+                  class="card-img-top" alt="...">
+                <img
+                  src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684080619_Blockbuster_Baby_Care_Deals.jpg"
+                  class="card-img-top" alt="...">
+
+              </section>
+
+            </div>
+
+            <!-- ends  -->
+          </div>
+          <div class="carousel-item">
+            <section style="display:flex ">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795254_Smartphones.jpg"
+                class="card-img-top" alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795325_Ac.jpg" class="card-img-top"
+                alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795365_Televisions.jpg"
+                class="card-img-top" alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795408_Laptop.jpg"
+                class="card-img-top" alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795524_Headphones.jpg"
+                class="card-img-top" alt="...">
+              <img
+                src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684080619_Blockbuster_Baby_Care_Deals.jpg"
+                class="card-img-top" alt="...">
+
+            </section>
+
+          </div>
+          <div class="carousel-item">
+            <section style="display: flex;">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795254_Smartphones.jpg"
+                class="card-img-top" alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795325_Ac.jpg" class="card-img-top"
+                alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795365_Televisions.jpg"
+                class="card-img-top" alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795408_Laptop.jpg"
+                class="card-img-top" alt="...">
+              <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683795524_Headphones.jpg"
+                class="card-img-top" alt="...">
+              <img
+                src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684080619_Blockbuster_Baby_Care_Deals.jpg"
+                class="card-img-top" alt="...">
+
+            </section>
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+      <!-- section 7 ends -->
+    </section>
+
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683781617_Web_Mumbai_PremiumFruits.jpg"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684075599_Mumbai.jpg" class="d-block w-100"
+              alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+
+       <!-- section 4 start  -->
+       <section class="sec4">
+        <h1>Electronics</h1>
+
+
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- card start  -->
+              <section class="cards-flex">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005020_OnePlus_11R.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683793428_Grab_or_Gone_deals_on_TV.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005164_Vivo_T2X_5G.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005231_Zunvolt_Thunder_Ceiling_Fan.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+              </section>
+
+              <!-- card end  -->
+            </div>
+            <div class="carousel-item">
+              <!-- card start  -->
+              <section class="cards-flex">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005020_OnePlus_11R.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683793428_Grab_or_Gone_deals_on_TV.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005164_Vivo_T2X_5G.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005231_Zunvolt_Thunder_Ceiling_Fan.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+              </section>
+
+              <!-- card end  -->
+            </div>
+            <div class="carousel-item">
+              <!-- card start  -->
+              <section class="cards-flex">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005020_OnePlus_11R.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683793428_Grab_or_Gone_deals_on_TV.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005068_VOLTS_BEKO_200L_3_Star_.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005164_Vivo_T2X_5G.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img
+                    src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1684005231_Zunvolt_Thunder_Ceiling_Fan.jpg"
+                    class="card-img-top" alt="...">
+                </div>
+              </section>
+
+              <!-- card end  -->
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+      </section>
+
+
+    <section>
+      <img width="100%" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1683877200_Continue_Shopping_Desktop.jpg" alt="">
+      <img width="100%" src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1675955392_Jio_Cares_1240x194.jpg" alt="">
+    </section>
+
+
+
+  </main>
+
+
+
+  <footer>
+    <div>
+      <h3>All CategoriesG</h3>
+      <ul>
+        <li>rocery</li>
+        <li>Electronics</li>
+        <li>fanshion</li>
+        <li>beauty</li>
+        <li>Home & Kitchen</li>
+        <li>Premium Fruits</li>
+        <li>Books</li>
+        <li>Frniture</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Popular Categores</h3>
+      <ul>
+        <li>Staples</li>
+        <li>Beverages</li>
+        <li>Personnal care</li>
+        <li>Home care</li>
+        <li>Fruits & Vegetables</li>
+        <li> Baby Care</li>
+        <li>Snacks & Branded Food</li>
+        <li>Dairy &Bakery</li>
+      </ul>
+    </div>
+    <div>
+      
+        <h3>Customer Acoouunt</h3>
+        <ul>
+          <li>My Account</li>
+          <li>MyOrders</li>
+          <li> Whistkist</li>
+          <li>payment methods</li>
+          <li>Delivery Addresses</li>
+          <li> Jio mart Wallet</li>
+  
+        </ul>
+        
+    </div>
+    
+  
+      <div>
+        <h3>Help & Support</h3>
+        <ul>
+          <li>FAQ</li>
+          <li>Terms & Conditions</li>
+          <li> Privacy Policy</li>
+          <li>Canelation &ReturnPolicy</li>
+          <li>Shipping & Devlivery Policy</li>
+
+
+        </ul>
+      </div>
+      <div >
+        <h3>Conatct us</h3>
+        <ul>
+          <li>Whats up:70003 70003</li>
+          <li>Call us :1800 890 1222</li>
+          <li> Please note that you are acessing te BETA</li>
+          <li>Should you encounter any bugs, glitches, lack of functionality, delayed deliveries, billing errors or
+            other problems on the beta website, please email us on cs@jiomart.com</li>
+  
+          <li>
+            <h1>Download the app</h1>
+          </li>
+          <li style="display: flex;"><span><img src="./imges/google-play-icon.svg" alt="">
+           </span><span> <img src="./imges/ios_app_icon.svg" alt=""></span>
+          </li>
+  
+        </ul>
+      </div>
+      
+    
+
+    
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
