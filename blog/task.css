@@ -11,13 +11,14 @@ ul li{
     list-style: none;
 }
 li,i{
-    color: blue;
+    color: red;
     margin-left: 30px;
     margin-top: 3px;
     margin-bottom: 3px;
     font-size: larger;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .main2{
     display: flex;
